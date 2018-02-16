@@ -1,0 +1,42 @@
+<?php 
+		session_start();
+		if (isset($_POST['submit'])) {
+
+
+  			# code...
+  		
+		require 'QR_Code_Libraries\qrlib.php';
+		 $file_name = time().'_'.uniqid();
+		 $data = $_POST['data'];
+		 $storage_path = 'QR_Codes_Images/'.$file_name.'.png';
+		  // $stored_Path =  $dir_path.$file_name.'.png';
+		 
+		   QRcode::png($data, $storage_path );
+
+		  //Telephone 
+		  // QRcode::png('TEL:'.$data, $storage_path );
+
+
+		  //SMS 
+		  // QRcode::png('SMSTO:'.$data.':my message goes here', $storage_path );
+	
+			//Email
+			//QRcode::png(' MATMSG:TO:'.$data.'SUB:'.$data.'BODY:'.$data, $storage_path );
+
+		 	//VCARD
+			// QRcode::png('MECARD:N:'.$data.';ADR:'.$data.';TEL:'.$data.';EMAIL:'.$data.';CITY:'.$data, $storage_path );
+		   
+		 	//WIFI
+			// QRcode::png('WIFI:S:'.'TP Link'.'; T:'.'WPA2PSK'.'; P:'.'password', $storage_path );
+
+
+		   $_SESSION['file_name'] = $file_name;
+		   $_SESSION['time'] = 30;
+		  	header('Location: ' . $_SERVER['HTTP_REFERER']);
+		  	exit;
+		  
+
+		} 
+
+
+?>
