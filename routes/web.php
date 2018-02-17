@@ -15,5 +15,13 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/contact', function (){
+    return view('pages.contact');
+})->name('contact');
+
+Route::get('loin_page', function (){
+    return view('user.login');
+})->name('login');
+
 
 

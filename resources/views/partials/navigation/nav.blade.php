@@ -1,20 +1,24 @@
 
-<header class="activeheadmenu other-header">
-    <div class="navbar " role="navigation">
+<header>
+    <div class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" onclick="In_headerFunction()">
                     <i class="zmdi zmdi-menu"></i>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="{{ url('content/auto_site_logo.jpg') }}" height="50" width="50" alt="Infinity - Premium URL Shortener Theme">
+                    <img src="{{ url('content/auto_site_logo.jpg') }}"  alt="Infinity - Premium URL Shortener Theme">
+                    <span style="margin-top: -30px;">QR- Generator</span>
                 </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="user/register.html" >Get Started</a></li>
-                    <li><a href="user/login.html">Login</a> </li>
+                    <li><a href="user/register.html" >Home</a></li>
+                    <li><a href="Contact Us">Why Choose Us? </a></li>
+                    <li><a href="{{ route('contact') }}">Contact </a></li>
+                    <li><a href="Contact Us">QR Decoder </a></li>
+                    <li><a href="{{ route('login') }}">Login </a></li>
                 </ul>
-            </div>            </div>
+            </div>		</div>
     </div>
 </header>
