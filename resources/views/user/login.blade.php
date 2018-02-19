@@ -26,7 +26,7 @@
 					<input type='hidden' name='token' value='5bb6a50b60449b6699a5a8006ece28a81c1cb644' />
 					<p class="info-row">
 						<span>Don't have an account?</span>
-						<a href="register.blade.php" class="register-link">Create account</a>
+						<a href="{{ route('register') }}" class="register-link">Create account</a>
 					</p>
 					<hr>
 					<div class="social">

@@ -11,17 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/contact', function (){
-    return view('pages.contact');
-})->name('contact');
+Route::get('/contact', 'ContactController@index')->name('contact');
 
-Route::get('loin_page', function (){
+Route::get('login', function (){
     return view('user.login');
 })->name('login');
 
-
-
+Route::get('register' , function (){
+    return view('user.register');
+})->name('register');

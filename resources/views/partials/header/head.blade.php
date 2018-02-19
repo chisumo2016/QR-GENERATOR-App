@@ -27,6 +27,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('themes/infinity/css/snackbar.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('static/css/components.min.css') }}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ asset('css/customs.css') }}">
 <!-- Required Javascript Files -->
 <script type="text/javascript" src="{{ asset('ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.mine8da.js?v=2.0.3') }}"></script>
 <script type="text/javascript">

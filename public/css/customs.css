@@ -1,0 +1,10 @@
+header .navbar .nav li a:hover{
+    background-color: white;
+    color: blue;
+    border-radius: 0px ;
+
+}
+#qrcode-option ul li a{
+    background-color: #1b7cb5;
+    color: white;
+}
